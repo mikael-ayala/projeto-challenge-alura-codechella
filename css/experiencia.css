@@ -1,0 +1,181 @@
+.experiencia {
+  background: linear-gradient(180deg, #304968 0%, #36c1a0 52.6%, #4650bd 100%);
+}
+
+.experiencia__banner {
+  background: url(../img/experiencia-banner-360px.png) no-repeat center;
+  background-size: 100% 100%;
+  height: 27rem;
+  width: 100%;
+}
+
+.experiencia__banner__text {
+  color: white;
+  font-family: 'Calistoga', serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  padding-block: 11.4rem;
+  text-align: center;
+}
+
+.experiencia__acessibilidade,
+.experiencia__sustentabilidade,
+.experiencia__atracoes {
+  padding: 3.2rem 2.4rem;
+}
+
+.experiencia__acessibilidade__img {
+  background: url(../img/experiencia-mulher.png) no-repeat center;
+}
+
+.experiencia__sustentabilidade__img {
+  background: url(../img/experiencia-sacola.png) no-repeat center;
+}
+
+.experiencia__atracoes__img {
+  background: url(../img/experiencia-roda-gigante.png) no-repeat center;
+}
+
+.experiencia__acessibilidade__img,
+.experiencia__sustentabilidade__img,
+.experiencia__atracoes__img {
+  height: 38.1rem;
+  margin-bottom: 3.2rem;
+}
+
+.experiencia__acessibilidade__div__title,
+.experiencia__sustentabilidade__div__title,
+.experiencia__atracoes__div__title {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.experiencia__acessibilidade__div__text,
+.experiencia__sustentabilidade__div__text,
+.experiencia__atracoes__div__text {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .experiencia__banner {
+    background: url(../img/experiencia-banner-768px.png) no-repeat center;
+    height: 38.4rem;
+  }
+
+  .experiencia__banner__text {
+    font-size: 6.4rem;
+    font-weight: 400;
+    padding-block: 15.05rem;
+  }
+
+  .experiencia__acessibilidade,
+  .experiencia__sustentabilidade,
+  .experiencia__atracoes {
+    padding: 3.2rem 6rem;
+  }
+
+  .experiencia__acessibilidade__img,
+  .experiencia__sustentabilidade__img,
+  .experiencia__atracoes__img {
+    margin-bottom: 3.2rem;
+    width: 100%;
+  }
+
+  .experiencia__acessibilidade__img {
+    background: url(../img/experiencia-mulher-768px.png) no-repeat center;
+  }
+
+  .experiencia__sustentabilidade__img {
+    background: url(../img/experiencia-sacola-768px.png) no-repeat center;
+  }
+
+  .experiencia__atracoes__img {
+    background: url(../img/experiencia-roda-gigante-768px.png) no-repeat center;
+  }
+
+  .experiencia__acessibilidade__div__text {
+    margin-inline: 6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .experiencia__banner {
+    background: url(../img/experiencia-banner-1024px.png) no-repeat center;
+    height: 40.7rem;
+  }
+
+  .experiencia__acessibilidade,
+  .experiencia__sustentabilidade,
+  .experiencia__atracoes {
+    display: flex;
+    padding: 6.4rem 12.15rem;
+  }
+
+  .experiencia__acessibilidade__img,
+  .experiencia__atracoes__img {
+    border-radius: 1.6rem;
+    margin-bottom: 0;
+    margin-right: 4.8rem;
+    width: 50rem;
+  }
+
+  .experiencia__sustentabilidade__img {
+    border-radius: 1.6rem;
+    margin-bottom: 0;
+    margin-left: 4.8rem;
+    order: 2;
+    width: 50rem;
+  }
+
+  .experiencia__acessibilidade__div,
+  .experiencia__sustentabilidade__div,
+  .experiencia__atracoes__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-block: 1.95rem;
+    width: 50%;
+  }
+
+  .experiencia__acessibilidade__div__title,
+  .experiencia__atracoes__div__title {
+    text-align: left;
+    margin-bottom: 2.4rem;
+  }
+
+  .experiencia__sustentabilidade__div__title {
+    text-align: right;
+    margin-bottom: 2.4rem;
+  }
+
+  .experiencia__acessibilidade__div__text,
+  .experiencia__atracoes__div__text {
+    text-align: left;
+  }
+
+  .experiencia__sustentabilidade__div__text {
+    order: 1;
+    text-align: right;
+  }
+
+  .experiencia__acessibilidade__div__text {
+    margin-inline: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .experiencia__acessibilidade__img,
+  .experiencia__atracoes__img {
+    width: 60.7rem;
+  }
+
+  .experiencia__sustentabilidade__img {
+    width: 60.7rem;
+  }
+}

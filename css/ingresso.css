@@ -1,0 +1,136 @@
+.ingresso {
+  background: linear-gradient(180deg, #304968 0%, #36c1a0 52.6%, #4650bd 100%);
+}
+
+.ingresso__banner {
+  background: url(../img/ingresso-banner.png) no-repeat center;
+  background-size: 100% 100%;
+  height: 28.1rem;
+}
+
+.ingresso__banner__text {
+  color: white;
+  font-family: 'calistoga', serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 11.95rem 2.4rem;
+}
+
+.formulario {
+  padding: 3.2rem 2.4rem;
+}
+
+.formulario__title {
+  color: white;
+  font-family: 'calistoga', serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.formulario__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario__form__label {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.formulario__form__input {
+  appearance: none;
+  border: none;
+  height: 4.8rem;
+  outline: none;
+  margin-bottom: 3.2rem;
+  padding: 1rem;
+}
+
+.formulario__form__div {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-pos {
+  position: relative;
+}
+
+.formulario__form__input__icon {
+  background: url(../img/arrow_drop_down_black.png) no-repeat center;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 6.5rem;
+  right: 1.5rem;
+  height: 0.8rem;
+  width: 1.8rem;
+}
+
+.formulario__form__button {
+  align-items: center;
+  background-color: var(--boreal-purple);
+  border: none;
+  border-radius: 1.6rem;
+  box-shadow: 0.4rem 0.4rem black;
+  color: white;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  height: 5.6rem;
+  justify-content: space-between;
+  margin-inline: auto;
+  padding: 0.8rem 1.6rem;
+  width: 16.4rem;
+}
+
+/************************************ MEDIA QUERY 768px ****************************************************/
+
+@media screen and (min-width: 768px) {
+  .ingresso__banner {
+    height: 38.4rem;
+  }
+
+  .ingresso__banner__text {
+    padding: 15.05rem 7.75rem;
+    font-size: 6.4rem;
+    font-weight: 400;
+  }
+
+  .formulario {
+    padding: 4.8rem 6rem;
+  }
+
+  .formulario__title {
+    font-size: 4.8rem;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .formulario {
+    padding-inline: 20rem;
+  }
+
+  .formulario__form__div {
+    height: 10.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 3.2rem;
+    column-gap: 2.4rem;
+    width: 100%;
+  }
+
+  .formulario__form__div .formulario__form__input {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .formulario {
+    padding-inline: 32.25rem;
+  }
+}

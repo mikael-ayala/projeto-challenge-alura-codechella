@@ -1,0 +1,360 @@
+.main {
+  background: linear-gradient(180deg, #304968 0%, #36c1a0 52.6%, #4650bd 100%);
+}
+
+.main__banner {
+  background: url(../img/banner.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.main__banner__text {
+  color: white;
+  font-family: 'Calistoga', serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+  text-align: center;
+  padding-block: 9.3rem;
+}
+
+/****************************** SECTION TICKETS **********************************************************/
+
+.main__section-tickets {
+  padding: 3.2rem 2.4rem;
+}
+
+.main__section-tickets__img {
+  background-image: url(../img/band-playing.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1.6rem;
+  height: 38.1rem;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.main__section-tickets__div__title {
+  color: white;
+  margin: 3.2rem 0 2.4rem 0;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 3.8rem;
+}
+
+.main__section-tickets__div__text {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 4rem;
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+
+.main__section-tickets__div__button {
+  align-items: center;
+  background-color: var(--boreal-purple);
+  border: none;
+  border-radius: 1.6rem;
+  box-shadow: 0.4rem 0.4rem 0 #444444;
+  color: white;
+  display: flex;
+  height: 5.6rem;
+  font-size: 2rem;
+  font-weight: 700;
+  justify-content: space-evenly;
+  margin-inline: auto;
+  padding: 0.8rem 1.6rem;
+  width: 31.2rem;
+}
+
+/****************************** SECTION LINE UP **********************************************************/
+
+.main__section-line-up {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 1.7rem;
+}
+
+.main__section-line-up__title {
+  color: white;
+  font-family: 'Calistoga', serif;
+  font-size: 4.8rem;
+  font-weight: 400;
+  margin-block: 3.2rem;
+}
+
+.main__section-line-up__div__sabado {
+  background-color: var(--green);
+  color: white;
+  font-family: 'Calistoga', serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  margin-block: 4.8rem;
+  padding: 1.6rem;
+}
+
+.main__section-line-up__div__domingo {
+  background-color: var(--green);
+  color: white;
+  font-family: 'Calistoga', serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  margin-block: 4.8rem;
+  padding: 1.6rem 1rem;
+}
+
+.main__section-line-up__list-sabado,
+.main__section-line-up__list-domingo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+
+.main__section-line-up__list-sabado li,
+.main__section-line-up__list-domingo li {
+  color: white;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+
+.main__section-line-up__list-sabado li:nth-child(odd),
+.main__section-line-up__list-domingo li:nth-child(4),
+.main__section-line-up__list-domingo li:nth-child(6),
+.main__section-line-up__list-domingo li:nth-child(8),
+.main__section-line-up__list-domingo li:nth-child(11) {
+  margin-bottom: 3.2rem;
+}
+
+.main__section-line-up__list-sabado li:nth-child(1),
+.main__section-line-up__list-domingo li:nth-child(1) {
+  font-size: 4.8rem;
+  font-weight: 800;
+  margin-bottom: 3.2rem;
+}
+
+.main__section-line-up__list-sabado li:nth-child(2),
+.main__section-line-up__list-sabado li:nth-child(3),
+.main__section-line-up__list-sabado li:nth-child(4),
+.main__section-line-up__list-sabado li:nth-child(5),
+.main__section-line-up__list-domingo li:nth-child(2),
+.main__section-line-up__list-domingo li:nth-child(3),
+.main__section-line-up__list-domingo li:nth-child(4),
+.main__section-line-up__list-domingo li:nth-child(5),
+.main__section-line-up__list-domingo li:nth-child(6) {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.main__section-line-up__list-sabado li:nth-child(6),
+.main__section-line-up__list-sabado li:nth-child(7),
+.main__section-line-up__list-sabado li:nth-child(8),
+.main__section-line-up__list-sabado li:nth-child(9),
+.main__section-line-up__list-domingo li:nth-child(7),
+.main__section-line-up__list-domingo li:nth-child(8),
+.main__section-line-up__list-domingo li:nth-child(9),
+.main__section-line-up__list-domingo li:nth-child(10),
+.main__section-line-up__list-domingo li:nth-child(11) {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.main__section-line-up__list-sabado li:nth-child(10),
+.main__section-line-up__list-sabado li:nth-child(11),
+.main__section-line-up__list-sabado li:nth-child(12),
+.main__section-line-up__list-sabado li:nth-child(13),
+.main__section-line-up__list-domingo li:nth-child(12),
+.main__section-line-up__list-domingo li:nth-child(13),
+.main__section-line-up__list-domingo li:nth-child(14) {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.main__section-line-up__list-sabado li:last-child {
+  margin-bottom: 4.8rem;
+}
+
+.main__banner-footer {
+  background: url(../img/guitarra.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 33.8rem;
+  margin-top: 3.2rem;
+}
+
+/************************************** MEDIA QUERY 768px **********************************************************/
+
+@media screen and (min-width: 768px) {
+  .main__banner__text {
+    font-size: 6.4rem;
+    font-weight: 400;
+    padding-block: 10.9rem;
+  }
+
+  /****************************** SECTION TICKETS **********************************************************/
+
+  .main__section-tickets {
+    padding: 3.2rem 6rem;
+  }
+
+  .main__section-tickets__img {
+    margin-inline: 1.95rem;
+    width: auto;
+  }
+
+  /****************************** SECTION LINE-UP **********************************************************/
+
+  .main__section-line-up__title {
+    font-size: 6.4rem;
+    font-weight: 400;
+  }
+
+  .main__section-line-up__div {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .main__section-line-up__div__line {
+    border-bottom: 1px solid var(--green);
+    width: 8.35rem;
+  }
+
+  .main__section-line-up__div__sabado {
+    font-size: 4.8rem;
+    padding: 1.6rem;
+    width: 41.7rem;
+  }
+
+  .main__section-line-up__div__domingo {
+    font-size: 4.8rem;
+    padding: 1.6rem;
+    width: 46.1rem;
+  }
+
+  .main__section-line-up__list-sabado,
+  .main__section-line-up__list-domingo {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .main__section-line-up__list-sabado li,
+  .main__section-line-up__list-domingo li {
+    margin-bottom: 3.2rem;
+  }
+
+  .main__section-line-up__list-domingo li,
+  .main__section-line-up__list-sabado li:nth-child(even) {
+    margin-right: 3.2rem;
+  }
+
+  .main__section-line-up__list-sabado li:nth-child(odd) {
+    text-align: left;
+  }
+
+  .main__section-line-up__list-sabado li:first-child,
+  .main__section-line-up__list-domingo li:first-child {
+    text-align: center;
+    width: 100%;
+  }
+
+  .main__section-line-up__list-sabado li:nth-child(12) {
+    margin-left: 7rem;
+  }
+
+  .main__section-line-up__list-sabado li:last-child {
+    margin-bottom: 3.2rem;
+    padding-right: 6.4rem;
+  }
+
+  .main__section-line-up__list-domingo li:last-child {
+    margin-right: 0;
+  }
+}
+
+/************************************** MEDIA QUERY 1024px **********************************************************/
+
+@media screen and (min-width: 1024px) {
+  .main__banner__text {
+    font-size: 6.4rem;
+    font-weight: 400;
+    padding: 12.05rem 6rem;
+  }
+
+  /****************************** SECTION TICKETS **********************************************************/
+
+  .main__section-tickets {
+    display: flex;
+    padding: 6.4rem 12rem;
+  }
+
+  .main__section-tickets__img {
+    height: auto;
+    margin: 0 4.8rem 0 0;
+    width: 192rem;
+  }
+
+  .main__section-tickets__div__title {
+    margin-top: 2.05rem;
+  }
+
+  .main__section-tickets__div__button {
+    margin-bottom: 2.05rem;
+  }
+
+  /****************************** SECTION LINE-UP **********************************************************/
+
+  .main__section-line-up {
+    padding-inline: 4rem;
+  }
+
+  .main__section-line-up__div__line {
+    width: 22rem;
+  }
+
+  .main__section-line-up__list-sabado li,
+  .main__section-line-up__list-domingo li,
+  .main__section-line-up__list-sabado li:nth-child(even) {
+    margin-right: 2rem;
+  }
+
+  .main__section-line-up__list-sabado li:nth-child(12) {
+    margin-left: 0;
+  }
+
+  /****************************************** BANNER FOOTER *******************************************************/
+
+  .main__banner-footer {
+    background: url(../img/guitarra-desktop-1440.png);
+  }
+}
+
+/***************************** MEDIA QUERY 1440px *************************************************************/
+
+@media screen and (min-width: 1440px) {
+  .main__banner__text {
+    padding: 12.05rem 25rem;
+  }
+
+  .main__section-tickets__div__text {
+    padding-inline: 2rem;
+  }
+
+  .main__section-line-up__div__line {
+    width: 30rem;
+  }
+
+  .main__section-line-up__list-sabado li,
+  .main__section-line-up__list-domingo li,
+  .main__section-line-up__list-sabado li:nth-child(even) {
+    margin-right: 3.2rem;
+  }
+}
