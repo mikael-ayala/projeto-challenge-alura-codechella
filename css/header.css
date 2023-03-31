@@ -11,13 +11,29 @@
 .header__menu__icon {
   height: 2rem;
   width: 2.5rem;
+  margin-left: auto;
   background: url(../img/menu.png);
   background-size: 100% 100%;
 }
 
 .header__menu__list {
-  display: none;
-  visibility: hidden;
+  align-items: center;
+  background-color: var(--boreal-purple);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  font-weight: 700;
+  height: 0;
+  justify-content: center;
+  left: 0;
+  list-style: none;
+  overflow: hidden;
+  position: absolute;
+  top: 12.8rem;
+  transition: height 0.7s;
+  transition-delay: 0.8s;
+  width: 100vw;
 }
 
 .header__menu__list__show {
@@ -32,20 +48,40 @@
   justify-content: center;
   left: 0;
   list-style: none;
+  overflow: initial;
   position: absolute;
   top: 12.8rem;
-  visibility: visible;
+  transition: height 0.7s;
   width: 100vw;
 }
 
-.header__menu__list__show li {
+.header__menu__list li {
+  opacity: 0;
   margin-bottom: 3rem;
+  transition: opacity 1s;
+}
+
+.header__menu__list__show li {
+  opacity: 1;
+  margin-bottom: 3rem;
+  transition: opacity 1s;
+  transition-delay: 0.7s;
 }
 
 .header__menu__list__hr {
+  opacity: 0;
+  transition: opacity 1s;
   margin-bottom: 3rem;
   width: 60%;
 }
+
+.header__menu__list__show
+.header__menu__list__hr {
+  opacity: 1;
+  transition: opacity 1s;
+  transition-delay: 0.7s;
+}
+
 
 /*********** MEDIA QUERY 768px **********************************************************************/
 
