@@ -75,13 +75,11 @@
   width: 60%;
 }
 
-.header__menu__list__show
-.header__menu__list__hr {
+.header__menu__list__show .header__menu__list__hr {
   opacity: 1;
   transition: opacity 1s;
   transition-delay: 0.7s;
 }
-
 
 /*********** MEDIA QUERY 768px **********************************************************************/
 
@@ -106,13 +104,22 @@
   }
 
   .header__menu__list {
-    color: white;
-    display: flex;
+    background: none;
+    flex-direction: row;
     font-size: 2rem;
     font-weight: 700;
-    list-style: none;
-    visibility: visible;
+    height: auto;
     justify-content: space-between;
+    overflow: initial;
+    position: initial;
+    visibility: visible;
+    width: auto;
+  }
+
+  .header__menu__list li {
+    opacity: 1;
+    margin-bottom: 0;
+    transition: none;
   }
 
   .header__menu__list__hr {

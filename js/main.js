@@ -6,7 +6,9 @@ let listMenuNav = document.querySelector('.header__menu__list')
 let menuIsOpen = false
 
 buttonMenuNav.addEventListener('click', () => {
-  if (!menuIsOpen) {
+  let browserWidth = parseInt(window.innerWidth)
+
+  if (!menuIsOpen && browserWidth <= 767) {
     iconMenuNav.style.backgroundImage = 'url(../img/close.png)'
 
     listMenuNav.classList.remove('header__menu__list')
@@ -15,7 +17,7 @@ buttonMenuNav.addEventListener('click', () => {
     body.classList.add('stop-scrolling')
 
     menuIsOpen = true
-  } else {
+  } else if (menuIsOpen && browserWidth <= 767) {
     iconMenuNav.style.backgroundImage = 'url(../img/menu.png)'
 
     listMenuNav.classList.remove('header__menu__list__show')
