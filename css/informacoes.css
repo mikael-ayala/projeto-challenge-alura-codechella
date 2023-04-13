@@ -57,6 +57,20 @@
 .informacoes__perguntas__box__resposta {
   background-color: var(--blue);
   color: var(--grey);
+  overflow: hidden;
+  height: 0;
+  transition: height 1s;
+}
+
+.informacoes__perguntas__box__resposta-show {
+  background-color: var(--blue);
+  color: var(--grey);
+  overflow: hidden;
+  height: 28rem;
+  transition: height 1s;
+}
+
+.informacoes__perguntas__box__resposta__text {
   font-size: 2rem;
   font-weight: 500;
   line-height: 4rem;
@@ -88,10 +102,18 @@
   .informacoes__perguntas__box__pergunta__text {
     width: 97%;
   }
+
+  .informacoes__perguntas__box__resposta-show {
+    height: 16rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .informacoes__perguntas {
     padding: 4.8rem 22.2rem;
+  }
+
+  .informacoes__perguntas__box__resposta-show {
+    height: 12rem;
   }
 }
