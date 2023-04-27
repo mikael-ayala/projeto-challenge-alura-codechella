@@ -84,50 +84,32 @@
       <div class="formulario">
         <h2 class="formulario__title">Preencha o formulário a seguir</h2>
         <form action="submit" class="formulario__form">
-          <label for="nome" class="formulario__form__label"
-            >Nome Completo:</label
-          >
-          <input
-            type="text"
-            name="nome"
-            id="nome"
-            class="formulario__form__input"
-            required
-          />
-          <label for="email" class="formulario__form__label">Email:</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="formulario__form__input"
-            required
-          />
+          <fieldset>
+            <label for="nome" class="formulario__form__label">Nome Completo:</label>
+            <input type="text" name="nome" id="nome" class="formulario__form__input" required />
+            <span class="mensagem-erro"></span>
+          </fieldset>
+
+          <fieldset>
+            <label for="email" class="formulario__form__label">Email:</label>
+            <input type="email" name="email" id="email" class="formulario__form__input" required />
+            <span class="mensagem-erro"></span>
+          </fieldset>
+
           <div class="formulario__form__div">
-            <label for="tickets" class="formulario__form__label icon-pos"
-              >Tipo de ingresso:
-              <div class="formulario__form__input__icon"></div>
-            </label>
-            <select
-              name="tickets"
-              id="tickets"
-              class="formulario__form__input"
-              required
-            >
-              <option hidden>Tipo de Ingresso</option>
-              <option value="pista">Pista</option>
-              <option value="pista-premium">Premium</option>
-              <option value="cadeira">Cadeira</option>
-            </select>
-            <label for="birth" class="formulario__form__label"
-              >Data de Nascimento:</label
-            >
-            <input
-              type="date"
-              name="birth"
-              id="birth"
-              class="formulario__form__input"
-              required
-            />
+              <label for="tickets" class="formulario__form__label icon-pos">Tipo de ingresso:
+                <div class="formulario__form__input__icon"></div>
+              </label>
+              <select name="tickets" id="tickets" class="formulario__form__input" required >
+                <option hidden>Tipo de Ingresso</option>
+                <option value="pista">Pista</option>
+                <option value="pista-premium">Premium</option>
+                <option value="cadeira">Cadeira</option>
+              </select>
+
+              <label for="birth" class="formulario__form__label">Data de Nascimento:</label>
+              <input type="date" name="birth" id="birth" class="formulario__form__input" required />
+              <span class="mensagem-erro"></span>
           </div>
           <button type="submit" class="formulario__form__button">
             Avançar!
@@ -224,5 +206,6 @@
       </p>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="./js/validacoesFormulario.js" type="module"></script>
   </body>
 </html>

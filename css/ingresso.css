@@ -35,6 +35,12 @@
   flex-direction: column;
 }
 
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
 .formulario__form__label {
   color: white;
   font-size: 3.2rem;
@@ -47,7 +53,6 @@
   border: none;
   height: 4.8rem;
   outline: none;
-  margin-bottom: 3.2rem;
   padding: 1rem;
 }
 
@@ -87,6 +92,11 @@
   width: 16.4rem;
 }
 
+.mensagem-erro {
+  font-size: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
 /************************************ MEDIA QUERY 768px ****************************************************/
 
 @media screen and (min-width: 768px) {
@@ -116,7 +126,7 @@
   }
 
   .formulario__form__div {
-    height: 10.5rem;
+    height: 13rem;
     flex-wrap: wrap;
     margin-bottom: 3.2rem;
     column-gap: 2.4rem;
@@ -125,6 +135,10 @@
 
   .formulario__form__div .formulario__form__input {
     width: auto;
+    margin-bottom: 0;
+  }
+
+  .mensagem-erro:last-child {
     margin-bottom: 0;
   }
 }
