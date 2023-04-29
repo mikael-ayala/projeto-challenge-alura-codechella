@@ -1,6 +1,23 @@
 import maiorDeIdade from "./valida-idade.js"
 
 const camposFormulario = document.querySelectorAll('[required]')
+const formulario = document.querySelector('[data-formulario]')
+
+formulario.addEventListener('submit', e => {
+    e.preventDefault()
+    
+    const listaRespostas = {
+        'nome': e.target.elements['nome'].value,
+        'email': e.target.elements['email'].value,
+        'tickets': e.target.elements['tickets'].value,
+        'birth': e.target.elements['birth'].value
+    }
+
+    localStorage.setItem('cadastro', JSON.stringify(listaRespostas))
+
+    window.location.href = './ingresso-comprado.html'
+})
+
 
 const tiposDeErro = [
     'valueMissing',
@@ -24,6 +41,9 @@ const mensagens = {
     birth: {
         valueMissing: 'O campo de data de nascimento não pode estar vazio.',
         customError: 'Você deve ser maior que 18 anos para se cadastrar.'
+    },
+    tickets: {
+        customError: 'Por favor, escolha uma opção de ingresso.'
     }
 }
 
@@ -34,6 +54,10 @@ camposFormulario.forEach((campo) => {
 
         if (campo.name == 'birth' && campo.value != '') {
             maiorDeIdade(campo)
+        }
+
+        if (campo.name == 'tickets' && campo.value == 'Tipo de Ingresso') {
+            campo.setCustomValidity('O usuário deve selecionar uma opção de ingresso')
         }
 
         tiposDeErro.forEach(erro => {

@@ -83,7 +83,7 @@
       </div>
       <div class="formulario">
         <h2 class="formulario__title">Preencha o formulário a seguir</h2>
-        <form action="submit" class="formulario__form">
+        <form action="submit" class="formulario__form" data-formulario>
           <fieldset>
             <label for="nome" class="formulario__form__label">Nome Completo:</label>
             <input type="text" name="nome" id="nome" class="formulario__form__input" required />
@@ -97,6 +97,7 @@
           </fieldset>
 
           <div class="formulario__form__div">
+            <fieldset>
               <label for="tickets" class="formulario__form__label icon-pos">Tipo de ingresso:
                 <div class="formulario__form__input__icon"></div>
               </label>
@@ -106,10 +107,14 @@
                 <option value="pista-premium">Premium</option>
                 <option value="cadeira">Cadeira</option>
               </select>
+              <span class="mensagem-erro"></span>
+            </fieldset>
 
+            <fieldset>
               <label for="birth" class="formulario__form__label">Data de Nascimento:</label>
               <input type="date" name="birth" id="birth" class="formulario__form__input" required />
               <span class="mensagem-erro"></span>
+            </fieldset>
           </div>
           <button type="submit" class="formulario__form__button">
             Avançar!
