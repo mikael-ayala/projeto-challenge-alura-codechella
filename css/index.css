@@ -58,6 +58,7 @@
   border-radius: 1.6rem;
   box-shadow: 0.4rem 0.4rem 0 #444444;
   color: white;
+  cursor: pointer;
   display: flex;
   height: 5.6rem;
   font-size: 2rem;

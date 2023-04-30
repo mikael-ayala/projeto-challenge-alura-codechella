@@ -82,6 +82,7 @@ fieldset {
   border-radius: 1.6rem;
   box-shadow: 0.4rem 0.4rem black;
   color: white;
+  cursor: pointer;
   display: flex;
   font-size: 2rem;
   font-weight: 700;
